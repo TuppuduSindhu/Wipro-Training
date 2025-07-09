@@ -1,0 +1,35 @@
+====================Command Line Arguments============
+1. When you run a Java program, you can pass extra inputs directly in the command line (terminal).
+
+2. These inputs are called command line arguments.
+
+3. They are passed to the program as an array of strings (String[] args) in the main method.
+
+4. You can use these arguments inside your program to affect how it runs.
+
+
+code :
+public class AddStrings {
+    public static void main(String[] args) {
+        if (args.length < 2) {
+            System.out.println("Please provide two strings as arguments.");
+            return;
+        }
+        
+        String str1 = args[0];
+        String str2 = args[1];
+        
+        String result = str1 + str2;
+        System.out.println("Concatenated string: " + result);
+    }
+}
+
+
+steps to run: 
+
+1.compile -> javac AddStrings.java
+
+2.run->  java AddStrings Hello World
+3.output-> Concatenated string: HelloWorld
+
+
