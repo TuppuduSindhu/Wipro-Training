@@ -1,0 +1,20 @@
+1. write a code to print true or false based on last digit of two numbers for example if first number is 12 and second number is 2 the last digits are same so we have to print true otherwise print false 
+
+approach : we can solve this by using % like if num1%10 is equal to num2%10 then their last digits must be same so we simply print true 
+code :
+
+import java.util.*;
+public class lastDigitEqual {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		if(a%10==b%10) {
+			System.out.println("true");
+		}
+		else {
+			System.out.println("false");
+		}
+	}
+
+}
